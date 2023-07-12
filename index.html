@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script>
+      function resetCalculator() {
+        document.getElementById("result").innerHTML = "0";
+      }
+
+      function calculate() {
+        var number1 = parseInt(document.getElementById("number1").value);
+        var number2 = parseInt(document.getElementById("number2").value);
+        var operation = document.getElementById("operation").value;
+        var result = 0;
+
+        switch (operation) {
+          case "+":
+            result = number1 + number2;
+            break;
+          case "-":
+            result = number1 - number2;
+            break;
+          case "*":
+            result = number1 * number2;
+            break;
+          case "/":
+            result = number1 / number2;
+            break;
+          default:
+            alert("Invalid operation selected.");
+            break;
+        }
+
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <input type="number" id="number1" placeholder="Number 1" />
+    <select id="operation">
+      <option value="+">Addition</option>
+      <option value="-">Subtraction</option>
+      <option value="*">Multiplication</option>
+      <option value="/">Division</option>
+    </select>
+    <input type="number" id="number2" placeholder="Number 2" />
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="resetCalculator()">Reset</button>
+    <p>Result: <span id="result">0</span></p>
+  </body>
+</html>
