@@ -1,0 +1,51 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to left,
+    rgb(98, 203, 230),
+    rgba(206, 202, 202, 1) 40%,
+    rgb(196, 13, 13)
+  );
+}
+
+table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9fdeee;
+}
+.cal-wrap {
+  margin-top: 10%;
+  border: 5px groove rgb(0, 0, 0);
+  width: 580px;
+  height: 450px;
+}
+input[type="button"] {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: rgba(100, 99, 99, 0.986);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px inset rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(153, 153, 153, 0.856);
+}
+
+input[type="text"] {
+  padding: 20px 30px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  border: 5px solid rgb(0, 0, 0);
+}
